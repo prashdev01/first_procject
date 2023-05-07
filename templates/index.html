@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>REVIEW FINDER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/css/style.css') }}">
+{% endblock head %}
+
+{% block body %}
+
+ 
+<div class="container">
+
+        <!-- <img src="/logos/panorama-milky-way-galaxy-with-stars-and-space-dust-royalty-free-image-1623176828.jpg"
+            alt="galaxy"> -->
+        <img src="\static\undraw_feedback_re_urmj.svg" alt="illustrtion"> 
+        
+
+  <div class="card">
+    <div class="card-body">
+      <h2>REViEW FiNDER</h2>
+      <form action="/review" method="POST">
+        <div class="form-group">
+          <!-- <label for="content">Search</label> -->
+          <input type="text" class="form-control" id="content" name="content" placeholder="Search Product Here" >
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="about" id="about">
+    <h1>About Review Finder</h1>
+    <p>Review Finder is a web application that retrieves reviews of products from Flipkart, a leading e-commerce platform in India. Our mission is to help consumers make informed purchasing decisions by providing them with authentic and reliable product reviews.</p>
+    <p>At Review Finder, we understand the importance of unbiased reviews in today's competitive market. That's why we employ a team of experts who manually curate reviews to ensure that they are genuine and not influenced by any third party.</p>
+    <p>Our user-friendly interface allows users to search for product reviews by entering the name of the product they are interested in. The application then retrieves all available reviews from Flipkart's database and presents them to the user in an easy-to-read format.</p>
+    <p>At Review Finder, we are committed to providing our users with the best possible experience. We are constantly updating and improving our application to ensure that it meets the changing needs of our users.</p>
+  </div>
+
+<div class="footer">
+    <footer>
+        <p>UI DESIGNED BY @prashant_wadhave</p>
+    </footer>
+</div>
+
+{% endblock body %}
