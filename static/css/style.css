@@ -13,28 +13,17 @@ html {
 }
 
 .header {
-  margin: auto;
-  text-align: center;
   display: flex;
-  justify-content: end;
-  align-items: end;
-  font-size: 20px;
-  margin-right: 20px;
-  padding-left: 20px;
+  margin-top: 10px;
 }
 
-.links {
-  display: flex;
-  flex-direction: row;
-  margin-right: 20px;
-  text-decoration: none;
-  list-style: none;
-}
 .links a {
   text-decoration: none;
   margin-top: 10px;
+  color: aqua;
+  margin-inline: 10px;
 }
-.links :hover a {
+.header :hover a {
   color: rgba(177, 255, 255, 0.87);
 }
 
@@ -185,6 +174,21 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
   margin: 50px;
+}
+
+.container-cntc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-cntc input {
+  display: block;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
