@@ -15,6 +15,7 @@ html {
 .header {
   margin: auto;
   text-align: center;
+  margin-top: 30px;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -23,62 +24,46 @@ html {
   padding-left: 20px;
 }
 
-.links {
-  display: flex;
-  flex-direction: row;
-  margin-right: 20px;
-  text-decoration: none;
-  list-style: none;
-}
 .links a {
   text-decoration: none;
   margin-top: 10px;
+  display: flex;
+  color: aqua;
+  flex-direction: row;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  list-style: none;
 }
+
 .links :hover a {
   color: rgba(177, 255, 255, 0.87);
 }
 
 /* Styles for the card */
+/* Styles for the container */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: 50px;
-}
-.container img {
-  width: 500px;
-  height: 500px;
-  margin-right: 120px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 50;
-  overflow: hidden;
-  padding: 10px;
-  box-shadow: 9px 10px 8px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  border-radius: 20px;
+  background-color: #f8f9fa;
 }
 
+/* Styles for the card */
 .card {
   max-width: 400px;
-  width: 30%;
+  width: 100%;
+  background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 9px 10px 8px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: rgba(253, 253, 253, 0.192);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  border-radius: 20px;
-  padding: 50px;
 }
 
 .card-body {
   padding: 20px;
 }
 
-/* Styles for the form */
 /* Styles for the form */
 form {
   margin-bottom: 0;
@@ -108,38 +93,6 @@ button[type=submit] {
 
 button[type=submit]:hover {
   background-color: #0069d9;
-  cursor: pointer;
-}
-
-input[type=text] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
-  background-color: rgb(32, 33, 36);
-  color: rgb(31, 185, 212);
-  font-family: "Source Code Pro", monospace;
-}
-
-button[type=submit] {
-  background: rgb(32, 33, 36);
-  cursor: pointer;
-  color: rgb(31, 185, 212);
-  padding: 10px;
-  font-family: "Balsamiq Sans", cursive;
-  box-shadow: 9px 10px 8px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-  transition-delay: 0.1s;
-  transition-property: all;
-  border: none;
-}
-
-button[type=submit]:hover {
-  background: rgb(31, 185, 212);
-  color: rgb(32, 33, 36);
   cursor: pointer;
 }
 
@@ -191,4 +144,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
